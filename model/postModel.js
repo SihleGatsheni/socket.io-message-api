@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const msgSchema = Schema({
+const postSchema = Schema({
 _id : Schema.Types.ObjectId,
-message:{
+post:{
     type: String,
     required:true,
 },
@@ -19,4 +19,4 @@ updateAt:{
 }
 
 });
-module.exports = mongoose.model('Msg',msgSchema)
+module.exports = mongoose.model('Post',postSchema);

@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const url = 'mongodb://localhost:27017/socketDB'
+//url connection String 
+const url = process.env.MONGODB_URI;
 
+// starting mongodb connection.
 mongoose.connect(url,{useNewUrlParser : true},(err) =>{
     if(!err){
         console.log('Server Connection to DB instance connected Successful!');
