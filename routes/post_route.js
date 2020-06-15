@@ -1,8 +1,8 @@
-const router = require('express').Router();
+onst router = require('express').Router();
 const mongoose = require('mongoose');
-const Msg = require('..model/msgModel');
+const Msg = require('../model/msgModel');
 
-router.post(('/apiMessage'),(req, res) =>{
+router.post('/apiMessage',(req, res) =>{
 
 
 })
